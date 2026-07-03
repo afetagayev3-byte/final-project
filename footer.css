@@ -1,1 +1,22 @@
+footer{
+    background-color: #ff3b30;
+    color: #ffffff;
+    padding: 40px 5% 20px;
+}
 
+.footer-container{
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    margin-bottom: 20px;
+
+}
+footer a{
+    color:#ffffff ;
+    text-decoration: none;
+}
+
+.footer-bootom{
+    text-align: center;
+    border-top: 1px solid rgba(255, 255, 255, 0.2);
+}
