@@ -12,78 +12,106 @@
 
 <body>
 
-    <main></main>
-
-
-
-    <section class="hero-section">
-
-    </section>
-
-
-
-
-    <section class="catogorias-section">
-        <h2>shop colection</h2>
-    </section>
-
-    <section class="promo-section">
-        <h2>promtion</h2>
-    </section>
-
-    <section class="fatured-product-section">
-
-    </section>
-
-    <section class="feedback-section">
-        <h2>feedback corner</h2>
-    </section>
-
-    <section class="explore-products-section">
-        <h2>Explore our products</h2>
-    </section>
-
-
-    <header>
-        <div class="logo">e-comerce</div>
-        <nav>
-            <ul>
-                <li><a href="#">home</a></li>
-                <li><a href="#">shop</a></li>
-                <li><a href="#">about</a></li>
-                <li><a href="#">contact</a></li>
-
-
-            </ul>
-        </nav>
-        <div class="headr-icons">
-
+    <header class="site-header">
+        <div class="header-container">
+            <div class="logo">E-commerce</div>
+            <nav class="nav-menu">
+                <ul>
+                    <li><a href="#" class="active">Home</a></li>
+                    <li><a href="#">About</a></li>
+                    <li><a href="#">Contact</a></li>
+                    <li><a href="#">Sign Up</a></li>
+                </ul>
+            </nav>
+            <div class="header-right">
+                <div class="search-box">
+                    <span class="search-icon">🔍</span>
+                    <input type="text" placeholder="Search an account">
+                </div>
+                <div class="icons">
+                    <button class="icon-btn" aria-label="Wishlist">❤️</button>
+                    <button class="icon-btn" aria-label="Cart">🛒</button>
+                </div>
+                <a href="#" class="btn-login">Log In</a>
+            </div>
         </div>
     </header>
 
-    <footer>
-        <div class="footer-container">
-            <div class="footer-brand">
-                <h3>e-commerce</h3>
-                <p>en iyi alisveris deneyimi</p>
-            </div>
-            <div class="footer-links">
-                <h4>qucik links</h4>
+    <main>
+        <!-- ==================== HERO SECTION (HOME) ==================== -->
+        <section class="hero-section">
+            <div class="hero-container">
+                <div class="hero-slider">
+                    <!-- Figma-dakı bənövşəyi qoşa iPhone şəkli -->
+                    <img src="images/iphone14pro.png" alt="iPhone 14 Pro Large" class="hero-img">
 
+                    <!-- Slayder idarəetmə oxları -->
+                    <button class="slide-arrow prev-arrow">&lt;</button>
+                    <button class="slide-arrow next-arrow">&gt;</button>
+
+                    <!-- Slayder nöqtələri -->
+                    <div class="slider-dots">
+                        <span class="dot"></span>
+                        <span class="dot active"></span>
+                        <span class="dot"></span>
+                        <span class="dot"></span>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <!-- ==================== FOOTER ==================== -->
+    <footer class="site-footer">
+        <div class="footer-container">
+            <!-- 1-ci Sütun -->
+            <div class="footer-column">
+                <h3>Exclusive</h3>
+                <p class="footer-subtext">Subscribe</p>
+                <div class="subscribe-box">
+                    <input type="email" placeholder="Enter your email">
+                    <button class="btn-arrow">→</button>
+                </div>
+            </div>
+
+            <!-- 2-ci Sütun -->
+            <div class="footer-column">
+                <h3>Support</h3>
                 <ul>
-                    <li><a href="#">privacy police</a></li>
-                    <li><a href="#">terms of service</a></li>
+                    <li><a href="#">Help Center</a></li>
+                    <li><a href="#">Contact Us</a></li>
                 </ul>
             </div>
-            <div class="footer-bottom">
-                <p>&copy; 2026 e-comerce. all rights resverd.</p>
+
+            <!-- 3-ci Sütun -->
+            <div class="footer-column">
+                <h3>Account</h3>
+                <ul>
+                    <li><a href="#">My Account</a></li>
+                    <li><a href="#">Login / Register</a></li>
+                </ul>
+            </div>
+
+            <!-- 4-cü Sütun -->
+            <div class="footer-column">
+                <h3>Quick Link</h3>
+                <ul>
+                    <li><a href="#">Privacy Policy</a></li>
+                    <li><a href="#">Terms of Use</a></li>
+                </ul>
+            </div>
+
+            <!-- 5-ci Sütun -->
+            <div class="footer-column">
+                <h3>Download App</h3>
+                <div class="qr-and-stores">
+                    <img src="images/qr-code.png" alt="QR Code" class="qr-code">
+                    <div class="store-buttons">
+                        <img src="images/google-play.png" alt="Google Play" class="store-img">
+                        <img src="images/app-store.png" alt="App Store" class="store-img">
+                    </div>
+                </div>
             </div>
         </div>
     </footer>
-
-
-
-
 </body>
-
-</html>

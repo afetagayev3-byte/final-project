@@ -1,22 +1,104 @@
-footer{
-    background-color: #ff3b30;
+.site-footer {
+    background-color: #ea4b48; /* Figmadakı orijinal qırmızı/mərcan rəng kodu */
     color: #ffffff;
-    padding: 40px 5% 20px;
+    padding: 80px 40px 40px 40px;
+    width: 100%;
 }
 
-.footer-container{
+.footer-container {
+    max-width: 1440px;
+    margin: 0 auto;
+    display: grid;
+    grid-template-columns: repeat(5, 1fr); /* 5 bərabər sütun quruluşu */
+    gap: 40px;
+}
+
+.footer-column h3 {
+    font-size: 20px;
+    font-weight: 600;
+    margin-bottom: 24px;
+    letter-spacing: -0.2px;
+}
+
+.footer-column ul {
+    list-style: none;
+}
+
+.footer-column ul li {
+    margin-bottom: 16px;
+}
+
+.footer-column ul li a {
+    font-size: 14px;
+    font-weight: 400;
+    color: rgba(255, 255, 255, 0.85);
+    transition: color 0.2s;
+}
+
+.footer-column ul li a:hover {
+    color: #ffffff;
+}
+
+.footer-subtext {
+    font-size: 14px;
+    margin-bottom: 16px;
+    color: rgba(255, 255, 255, 0.85);
+}
+
+/* Abunə Giriş Sahəsi (Subscribe Box) */
+.subscribe-box {
     display: flex;
-    justify-content: space-between;
-    flex-wrap: wrap;
-    margin-bottom: 20px;
-
-}
-footer a{
-    color:#ffffff ;
-    text-decoration: none;
+    align-items: center;
+    border-bottom: 1px solid rgba(255, 255, 255, 0.7);
+    padding-bottom: 8px;
+    width: 100%;
+    max-width: 200px;
 }
 
-.footer-bootom{
-    text-align: center;
-    border-top: 1px solid rgba(255, 255, 255, 0.2);
+.subscribe-box input {
+    background: none;
+    border: none;
+    color: #ffffff;
+    outline: none;
+    font-size: 14px;
+    width: 100%;
+}
+
+.subscribe-box input::placeholder {
+    color: rgba(255, 255, 255, 0.6);
+}
+
+.btn-arrow {
+    background: none;
+    border: none;
+    color: #ffffff;
+    font-size: 16px;
+    cursor: pointer;
+}
+
+/* QR Kod və Mağazalar */
+.qr-and-stores {
+    display: flex;
+    align-items: center;
+    gap: 16px;
+}
+
+.qr-code {
+    width: 80px;
+    height: 80px;
+    background-color: #ffffff;
+    padding: 6px;
+    border-radius: 6px;
+}
+
+.store-buttons {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+.store-img {
+    height: 32px;
+    object-fit: contain;
+    cursor: pointer;
 }
