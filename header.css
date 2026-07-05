@@ -1,109 +1,54 @@
 .site-header {
-    width: 100%;
-    background-color: #ffffff;
-    border-bottom: 1px solid #e5e5e5;
-    position: sticky;
-    top: 0;
-    z-index: 1000;
+  border-bottom: 0.5px solid #e5e5e5;
+  padding: 20px 0;
 }
 
 .header-container {
-    max-width: 1440px;
-    margin: 0 auto;
-    padding: 20px 40px;
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
+  max-width: 1170px;
+  margin: 0 auto;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0 15px;
 }
 
-.site-header .logo {
-    font-size: 24px;
-    font-weight: 700;
-    letter-spacing: -0.5px;
-    color: #000000;
+.logo {
+  font-size: 24px;
+  font-weight: 700;
+  letter-spacing: 1px;
 }
 
-.nav-menu ul {
-    display: flex;
-    list-style: none;
-    gap: 40px; /* Figmadakı proporsional menyu məsafəsi */
+.main-nav ul {
+  display: flex;
+  gap: 48px;
 }
 
-.nav-menu ul li a {
-    font-size: 14px;
-    font-weight: 500;
-    color: #141718;
-    transition: color 0.2s ease;
+.main-nav a {
+  font-size: 16px;
+  font-weight: 400;
 }
 
-.nav-menu ul li a:hover,
-.nav-menu ul li a.active {
-    color: #ea4b48; /* Dizayndakı qırmızı aktiv ton */
+.main-nav a.active, .main-nav a:hover {
+  text-decoration: underline;
 }
 
-.header-right {
-    display: flex;
-    align-items: center;
-    gap: 24px;
+.header-actions {
+  display: flex;
+  align-items: center;
+  gap: 24px;
 }
 
-/* Axtarış paneli */
-.search-box {
-    display: flex;
-    align-items: center;
-    background-color: #f3f5f7;
-    padding: 8px 16px;
-    border-radius: 8px;
-    width: 220px;
-}
-
-.search-icon {
-    font-size: 14px;
-    margin-right: 8px;
-    color: #6c7275;
-}
-
-.search-box input {
-    background: none;
-    border: none;
-    outline: none;
-    font-size: 14px;
-    color: #141718;
-    width: 100%;
-}
-
-.search-box input::placeholder {
-    color: #6c7275;
+.search-bar input {
+  background-color: #f5f5f5;
+  border: none;
+  padding: 7px 20px;
+  border-radius: 4px;
+  font-size: 12px;
+  outline: none;
 }
 
 .icons {
-    display: flex;
-    gap: 20px;
-    font-size: 20px;
-}
-
-.icon-btn {
-    background: none;
-    border: none;
-    cursor: pointer;
-    color: #141718;
-    transition: transform 0.15s ease;
-}
-
-.icon-btn:hover {
-    transform: scale(1.1);
-}
-
-.btn-login {
-    background-color: #ea4b48; /* Log In düyməsinin arxa fon rəngi */
-    color: #ffffff;
-    padding: 10px 24px;
-    border-radius: 8px;
-    font-weight: 500;
-    font-size: 14px;
-    transition: background-color 0.2s;
-}
-
-.btn-login:hover {
-    background-color: #d13b38;
+  display: flex;
+  gap: 16px;
+  cursor: pointer;
 }

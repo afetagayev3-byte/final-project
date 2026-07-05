@@ -15,103 +15,154 @@
     <header class="site-header">
         <div class="header-container">
             <div class="logo">E-commerce</div>
-            <nav class="nav-menu">
+            <nav class="main-nav">
                 <ul>
                     <li><a href="#" class="active">Home</a></li>
-                    <li><a href="#">About</a></li>
                     <li><a href="#">Contact</a></li>
+                    <li><a href="#">About</a></li>
                     <li><a href="#">Sign Up</a></li>
                 </ul>
             </nav>
-            <div class="header-right">
-                <div class="search-box">
-                    <span class="search-icon">🔍</span>
-                    <input type="text" placeholder="Search an account">
+            <div class="header-actions">
+                <div class="search-bar">
+                    <input type="text" placeholder="What are you looking for?">
                 </div>
                 <div class="icons">
-                    <button class="icon-btn" aria-label="Wishlist">❤️</button>
-                    <button class="icon-btn" aria-label="Cart">🛒</button>
+                    <span class="icon-heart">❤️</span>
+                    <span class="icon-cart">🛒</span>
                 </div>
-                <a href="#" class="btn-login">Log In</a>
             </div>
         </div>
     </header>
 
-    <main>
-        <!-- ==================== HERO SECTION (HOME) ==================== -->
-        <section class="hero-section">
-            <div class="hero-container">
-                <div class="hero-slider">
-                    <!-- Figma-dakı bənövşəyi qoşa iPhone şəkli -->
-                    <img src="images/iphone14pro.png" alt="iPhone 14 Pro Large" class="hero-img">
+    <!-- 2. MAIN CONTENT (Əsas Bölmələr) -->
+    <main class="main-content">
 
-                    <!-- Slayder idarəetmə oxları -->
-                    <button class="slide-arrow prev-arrow">&lt;</button>
-                    <button class="slide-arrow next-arrow">&gt;</button>
+        <!-- Shop Collection Bölməsi -->
+        <section class="shop-collection">
+            <div class="section-header">
+                <span class="badge">Featured</span>
+                <h2>Shop Collection</h2>
+            </div>
 
-                    <!-- Slayder nöqtələri -->
-                    <div class="slider-dots">
-                        <span class="dot"></span>
-                        <span class="dot active"></span>
-                        <span class="dot"></span>
-                        <span class="dot"></span>
+            <!-- Şəbəkə (Grid) Sistemi -->
+            <div class="collection-grid">
+
+                <!-- Sol tərəf: Böyük Headband Kartı -->
+                <div class="card card-large">
+                    <div class="card-img-wrapper">
+                        <!-- Sizin orijinal böyük qulaqlıq şəkliniz -->
+                        <img src="headband.png" alt="Headband">
                     </div>
+                    <div class="card-info">
+                        <h3>Headband</h3>
+                        <a href="#" class="shop-now">Shop Now</a>
+                    </div>
+                </div>
+
+                <!-- Sağ tərəf: Digər kartlar -->
+                <div class="right-column">
+
+                    <!-- Earbuds Kartı -->
+                    <div class="card card-horizontal">
+                        <div class="card-info">
+                            <h3>Earbuds</h3>
+                            <a href="#" class="shop-now">Shop Now</a>
+                        </div>
+                        <div class="card-img-wrapper">
+                            <img src="earbuds.png" alt="Earbuds">
+                        </div>
+                    </div>
+
+                    <!-- Alt yan-yana olan iki kart -->
+                    <div class="bottom-row">
+                        <!-- Accessories Kartı -->
+                        <div class="card card-vertical">
+                            <div class="card-img-wrapper">
+                                <img src="accessories.png" alt="Accessories">
+                            </div>
+                            <div class="card-info">
+                                <h3>Accessories</h3>
+                                <a href="#" class="shop-now">Shop Now</a>
+                            </div>
+                        </div>
+
+                        <!-- Eynək və ya digər əlavə kart -->
+                        <div class="card card-vertical">
+                            <div class="card-img-wrapper">
+                                <img src="glasses.png" alt="Glasses">
+                            </div>
+                            <div class="card-info">
+                                <h3>Glasses</h3>
+                                <a href="#" class="shop-now">Shop Now</a>
+                            </div>
+                        </div>
+                    </div>
+
                 </div>
             </div>
         </section>
+
     </main>
 
-    <!-- ==================== FOOTER ==================== -->
+    <!-- 3. FOOTER (Aşağı Hissə) -->
     <footer class="site-footer">
         <div class="footer-container">
-            <!-- 1-ci Sütun -->
-            <div class="footer-column">
+
+            <div class="footer-col">
                 <h3>Exclusive</h3>
-                <p class="footer-subtext">Subscribe</p>
-                <div class="subscribe-box">
+                <p>Subscribe</p>
+                <p class="sub-text">Get 10% off your first order</p>
+                <div class="footer-email">
                     <input type="email" placeholder="Enter your email">
-                    <button class="btn-arrow">→</button>
+                    <button>→</button>
                 </div>
             </div>
 
-            <!-- 2-ci Sütun -->
-            <div class="footer-column">
+            <div class="footer-col">
                 <h3>Support</h3>
-                <ul>
-                    <li><a href="#">Help Center</a></li>
-                    <li><a href="#">Contact Us</a></li>
-                </ul>
+                <p>111 Bijoy sarani, Dhaka, DH 1515, Bangladesh.</p>
+                <p>exclusive@gmail.com</p>
+                <p>+88015-88888-9999</p>
             </div>
 
-            <!-- 3-ci Sütun -->
-            <div class="footer-column">
+            <div class="footer-col">
                 <h3>Account</h3>
                 <ul>
                     <li><a href="#">My Account</a></li>
                     <li><a href="#">Login / Register</a></li>
+                    <li><a href="#">Cart</a></li>
+                    <li><a href="#">Wishlist</a></li>
+                    <li><a href="#">Shop</a></li>
                 </ul>
             </div>
 
-            <!-- 4-cü Sütun -->
-            <div class="footer-column">
+            <div class="footer-col">
                 <h3>Quick Link</h3>
                 <ul>
                     <li><a href="#">Privacy Policy</a></li>
-                    <li><a href="#">Terms of Use</a></li>
+                    <li><a href="#">Terms Of Use</a></li>
+                    <li><a href="#">FAQ</a></li>
+                    <li><a href="#">Contact</a></li>
                 </ul>
             </div>
 
-            <!-- 5-ci Sütun -->
-            <div class="footer-column">
+            <div class="footer-col">
                 <h3>Download App</h3>
-                <div class="qr-and-stores">
-                    <img src="images/qr-code.png" alt="QR Code" class="qr-code">
+                <p class="sub-text">Save $3 with App New User Only</p>
+                <div class="download-badges">
+                    <!-- QR və Mağaza loqoları bura gəlir -->
+                    <div class="qr-placeholder">QR Code</div>
                     <div class="store-buttons">
-                        <img src="images/google-play.png" alt="Google Play" class="store-img">
-                        <img src="images/app-store.png" alt="App Store" class="store-img">
+                        <span class="store-badge">Google Play</span>
+                        <span class="store-badge">App Store</span>
                     </div>
                 </div>
             </div>
+
+        </div>
+        <div class="footer-bottom">
+            <p>&copy; Copyright Rimel 2026. All right reserved</p>
         </div>
     </footer>
 </body>
