@@ -1,8 +1,150 @@
-.card {
-  background-color: #f7f7f7;
-  border-radius: 4px;
-  overflow: hidden;
-  position: relative;
-  display: flex;
-  padding: 30px;
-}
+* {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+        }
+
+        body {
+            background-color: #ffffff;
+            padding: 40px 20px;
+        }
+
+        .container {
+            max-width: 1200px;
+            margin: 0 auto;
+        }
+
+        /* Section Title Styling */
+        .section-header {
+            margin-bottom: 32px;
+        }
+
+        .tag {
+            display: inline-flex;
+            align-items: center;
+            gap: 8px;
+            color: #e53e3e;
+            font-size: 14px;
+            font-weight: 600;
+            text-transform: capitalize;
+            margin-bottom: 8px;
+        }
+
+        .tag::before {
+            content: '';
+            display: inline-block;
+            width: 4px;
+            height: 16px;
+            background-color: #e53e3e;
+            border-radius: 2px;
+        }
+
+        .section-title {
+            font-size: 28px;
+            font-weight: 700;
+            color: #1a202c;
+        }
+
+        /* Grid Layout */
+        .collection-grid {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 24px;
+        }
+
+        /* Left Side: Large Card */
+        .main-card {
+            background-color: #f7f9fa;
+            border-radius: 8px;
+            padding: 40px;
+            display: flex;
+            flex-direction: column;
+            justify-content: space-between;
+            position: relative;
+            min-height: 480px;
+        }
+
+        /* Right Side: Two Stacked Cards */
+        .side-cards {
+            display: flex;
+            flex-direction: column;
+            gap: 24px;
+        }
+
+        .sub-card {
+            background-color: #f7f9fa;
+            border-radius: 8px;
+            padding: 30px;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            flex: 1;
+            min-height: 228px;
+        }
+
+        /* Card Elements */
+        .card-info {
+            display: flex;
+            flex-direction: column;
+            gap: 8px;
+            z-index: 2;
+        }
+
+        .card-title {
+            font-size: 22px;
+            font-weight: 600;
+            color: #1a202c;
+        }
+
+        .collection-link {
+            display: inline-flex;
+            align-items: center;
+            gap: 6px;
+            color: #4a5568;
+            text-decoration: none;
+            font-size: 14px;
+            font-weight: 500;
+            border-bottom: 1px solid transparent;
+            width: fit-content;
+            transition: all 0.2s ease;
+        }
+
+        .collection-link:hover {
+            color: #000000;
+            border-bottom-color: #000000;
+        }
+
+        /* Image Positionings */
+        .main-card .card-img {
+            max-width: 70%;
+            max-height: 280px;
+            object-fit: contain;
+            margin: 20px auto 0 auto;
+        }
+
+        .sub-card .card-img {
+            max-width: 45%;
+            max-height: 160px;
+            object-fit: contain;
+        }
+
+        /* Responsive Breakpoint */
+        @media (max-width: 768px) {
+            .collection-grid {
+                grid-template-columns: 1fr;
+            }
+            .main-card {
+                min-height: 400px;
+            }
+            .sub-card {
+                flex-direction: column-reverse;
+                align-items: flex-start;
+                gap: 20px;
+                min-height: auto;
+            }
+            .sub-card .card-img {
+                max-width: 60%;
+                margin: 0 auto;
+            }
+        }

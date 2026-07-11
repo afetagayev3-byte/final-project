@@ -8,161 +8,196 @@
     <link rel="stylesheet" href="./home.css">
     <link rel="stylesheet" href="../footer.css">
     <link rel="stylesheet" href="../header.css">
+    <link rel="stylesheet" href="../card.css">
+
+
 </head>
 
 <body>
 
     <header class="site-header">
         <div class="header-container">
-            <div class="logo">E-commerce</div>
-            <nav class="main-nav">
+            <div class="logo">
+                <a href="#">E-commerce</a>
+            </div>
+
+            <nav class="main-navigation">
                 <ul>
                     <li><a href="#" class="active">Home</a></li>
-                    <li><a href="#">Contact</a></li>
                     <li><a href="#">About</a></li>
+                    <li><a href="#">Contact</a></li>
                     <li><a href="#">Sign Up</a></li>
                 </ul>
             </nav>
+
             <div class="header-actions">
                 <div class="search-bar">
                     <input type="text" placeholder="What are you looking for?">
+                    <button type="submit"><i class="search-icon">🔍</i></button>
                 </div>
-                <div class="icons">
-                    <span class="icon-heart">❤️</span>
-                    <span class="icon-cart">🛒</span>
-                </div>
+                <a href="#" class="action-icon">❤️</a>
+                <a href="#" class="action-icon">🛒</a>
             </div>
         </div>
     </header>
 
-    <!-- 2. MAIN CONTENT (Əsas Bölmələr) -->
-    <main class="main-content">
-
-        <!-- Shop Collection Bölməsi -->
-        <section class="shop-collection">
-            <div class="section-header">
-                <span class="badge">Featured</span>
-                <h2>Shop Collection</h2>
-            </div>
-
-            <!-- Şəbəkə (Grid) Sistemi -->
-            <div class="collection-grid">
-
-                <!-- Sol tərəf: Böyük Headband Kartı -->
-                <div class="card card-large">
-                    <div class="card-img-wrapper">
-                        <!-- Sizin orijinal böyük qulaqlıq şəkliniz -->
-                        <img src="headband.png" alt="Headband">
-                    </div>
-                    <div class="card-info">
-                        <h3>Headband</h3>
-                        <a href="#" class="shop-now">Shop Now</a>
-                    </div>
-                </div>
-
-                <!-- Sağ tərəf: Digər kartlar -->
-                <div class="right-column">
-
-                    <!-- Earbuds Kartı -->
-                    <div class="card card-horizontal">
-                        <div class="card-info">
-                            <h3>Earbuds</h3>
-                            <a href="#" class="shop-now">Shop Now</a>
-                        </div>
-                        <div class="card-img-wrapper">
-                            <img src="earbuds.png" alt="Earbuds">
-                        </div>
-                    </div>
-
-                    <!-- Alt yan-yana olan iki kart -->
-                    <div class="bottom-row">
-                        <!-- Accessories Kartı -->
-                        <div class="card card-vertical">
-                            <div class="card-img-wrapper">
-                                <img src="accessories.png" alt="Accessories">
-                            </div>
-                            <div class="card-info">
-                                <h3>Accessories</h3>
-                                <a href="#" class="shop-now">Shop Now</a>
-                            </div>
-                        </div>
-
-                        <!-- Eynək və ya digər əlavə kart -->
-                        <div class="card card-vertical">
-                            <div class="card-img-wrapper">
-                                <img src="glasses.png" alt="Glasses">
-                            </div>
-                            <div class="card-info">
-                                <h3>Glasses</h3>
-                                <a href="#" class="shop-now">Shop Now</a>
-                            </div>
-                        </div>
-                    </div>
-
-                </div>
-            </div>
-        </section>
-
-    </main>
-
-    <!-- 3. FOOTER (Aşağı Hissə) -->
+    <!-- FOOTER AREA -->
     <footer class="site-footer">
         <div class="footer-container">
-
-            <div class="footer-col">
+            <div class="footer-column">
                 <h3>Exclusive</h3>
                 <p>Subscribe</p>
-                <p class="sub-text">Get 10% off your first order</p>
-                <div class="footer-email">
+                <p>Get 10% off your first order</p>
+                <div class="subscribe-form">
                     <input type="email" placeholder="Enter your email">
-                    <button>→</button>
+                    <button type="submit">➔</button>
                 </div>
             </div>
-
-            <div class="footer-col">
-                <h3>Support</h3>
-                <p>111 Bijoy sarani, Dhaka, DH 1515, Bangladesh.</p>
-                <p>exclusive@gmail.com</p>
-                <p>+88015-88888-9999</p>
-            </div>
-
-            <div class="footer-col">
-                <h3>Account</h3>
-                <ul>
-                    <li><a href="#">My Account</a></li>
-                    <li><a href="#">Login / Register</a></li>
-                    <li><a href="#">Cart</a></li>
-                    <li><a href="#">Wishlist</a></li>
-                    <li><a href="#">Shop</a></li>
-                </ul>
-            </div>
-
-            <div class="footer-col">
-                <h3>Quick Link</h3>
-                <ul>
-                    <li><a href="#">Privacy Policy</a></li>
-                    <li><a href="#">Terms Of Use</a></li>
-                    <li><a href="#">FAQ</a></li>
-                    <li><a href="#">Contact</a></li>
-                </ul>
-            </div>
-
-            <div class="footer-col">
-                <h3>Download App</h3>
-                <p class="sub-text">Save $3 with App New User Only</p>
-                <div class="download-badges">
-                    <!-- QR və Mağaza loqoları bura gəlir -->
-                    <div class="qr-placeholder">QR Code</div>
-                    <div class="store-buttons">
-                        <span class="store-badge">Google Play</span>
-                        <span class="store-badge">App Store</span>
+            <section class="hero-banner">
+                <!-- Görsel bağlantısını kendi projenize göre güncelleyebilirsiniz -->
+                <img class="banner-image" src="home-image/dc40ba897215f42e5883a64157f0aa3a4d1a866a (2).jpg"
+                    alt="iPhone">
+                <section class="hero-banner">
+                    <!-- Görsel bağlantısını kendi projenize göre güncelleyebilirsiniz -->
+                    <img class="banner-image" src="home-image/ChatGPT Image Jul 2, 2026, 08_41_37 PM.png" alt="iPhone">
+                    <!-- Slider Navigasyon Noktaları -->
+                    <div class="slider-dots">
+                        <span class="dot active"></span>
+                        <span class="dot"></span>
+                        <span class="dot"></span>
+                        <span class="dot"></span>
+                        <span class="dot"></span>
                     </div>
-                </div>
-            </div>
+                </section>
 
-        </div>
-        <div class="footer-bottom">
-            <p>&copy; Copyright Rimel 2026. All right reserved</p>
+
+
+
+
+
+                <section class="sub-card">
+                    <div class="card-info">
+                        <h3 class="card-title">Accessories</h3>
+                        <a href="#" class="collection-link">Collection &rarr;</a>
+                    </div>
+                    <img class="card-img" src="home-image/637ba5ecbba8691512e22e4a663249a145b54afb.jpg"
+                        alt="Accessories">
+                </section>
+                <section class="sub-card">
+                    <div class="card-info">
+                        <h3 class="card-title">Accessories</h3>
+                        <a href="#" class="collection-link">Collection &rarr;</a>
+                    </div>
+                    <img class="card-img" src="home-image/aa22058c7c7ed32ee246b8fb8e8bfa7eff762cc4.jpg"
+                        alt="Accessories">
+                </section>
+                <section class="sub-card">
+                    <div class="card-info">
+                        <h3 class="card-title">Earbuds</h3>
+                        <a href="#" class="collection-link">Collection &rarr;</a>
+                    </div>
+                    <img class="card-img" src="home-image/8d64bd31d2eda88ccb4cc71f499a5d94c2a5bd61.png" alt="Earbuds">
+
+
+
+
+
+
+                    <div class="promotion-banner">
+                        <div class="banner-content">
+                            <span class="tag">Promotion</span>
+                            <h1 class="title">Promotion</h1>
+
+                            <div class="offer-container">
+                                <p class="offer-text">Hurry up! 40% OFF</p>
+
+                                <div class="countdown">
+                                    <div class="time-block">
+                                        <span class="number">02</span>
+                                        <span class="label">days</span>
+                                    </div>
+                                    <div class="separator">:</div>
+                                    <div class="time-block">
+                                        <span class="number">12</span>
+                                        <span class="label">hours</span>
+                                    </div>
+                                    <div class="separator">:</div>
+                                    <div class="time-block">
+                                        <span class="number">45</span>
+                                        <span class="label">minutes</span>
+                                    </div>
+                                    <div class="separator">:</div>
+                                    <div class="time-block">
+                                        <span class="number">05</span>
+                                        <span class="label">seconds</span>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="banner-image">
+                            <!-- Görselinizi buraya ekleyebilirsiniz -->
+                            <img src="macbook.png" alt="Headphones Promotion">
+                        </div>
+                    </div>
+
+
+
+
+                    
+                    <div class="container">
+                        <!-- Başlık Alanı -->
+                        <header class="section-header">
+                            <div class="tag">Featured</div>
+                            <h2 class="section-title">Shop Collection</h2>
+                        </header>
+
+                        <!-- Koleksiyon Grid Yapısı -->
+                        <main class="collection-grid">
+
+
+                            <!-- Sağ Taraf: İki Küçük Kart -->
+                            <div class="side-cards">
+
+
+
+
+                            </div>
+
+                        </main>
+                    </div>
+
+                    <div class="footer-column">
+                        <h3>Support</h3>
+                        <p>111 Bijoy sarayan, Dhaka, DH 1515, Bangladesh.</p>
+                        <p>exclusive@gmail.com</p>
+                        <p>+88015-88888-9999</p>
+                    </div>
+                </section>
+
+                <!-- Alt Sağ Kart: Accessories -->
+
+
+                <div class="footer-column">
+                    <h3>Account</h3>
+                    <ul>
+                        <li><a href="#">My Account</a></li>
+                        <li><a href="#">Login / Register</a></li>
+                        <li><a href="#">Cart</a></li>
+                        <li><a href="#">Wishlist</a></li>
+                        <li><a href="#">Shop</a></li>
+                    </ul>
+                </div>
+
+                <div class="footer-column">
+                    <h3>Quick Link</h3>
+                    <ul>
+                        <li><a href="#">Privacy Policy</a></li>
+                        <li><a href="#">Terms Of Use</a></li>
+                        <li><a href="#">FAQ</a></li>
+                        <li><a href="#">Contact</a></li>
+                    </ul>
+                </div>
         </div>
     </footer>
 </body>
